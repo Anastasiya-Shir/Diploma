@@ -1,0 +1,158 @@
+.contacts {
+  @include flex-column;
+  align-items: center;
+  padding-top: 95px;
+  background: $lightBlack;
+  align-items: center;
+  padding-bottom: 85px;
+  h2 {
+    font-size: 46px;
+    line-height: 57px;
+    /* identical to box height, or 124% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $white;
+    font-family: $primaryFontRegular;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $white;
+    font-family: $primaryFontRegular;
+    margin-bottom: 60px;
+    width: 20%;
+  }
+  &-info {
+    @include flex-row;
+    justify-content: center;
+
+    &__messeg {
+      @include flex-column;
+
+      padding-top: 114px;
+      &__subscribe {
+        @include flex-row;
+        padding-bottom: 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: $white;
+        font-family: $primaryFontRegular;
+        /* or 150% */
+
+        letter-spacing: 0.1px;
+        h5 {
+          width: 60%;
+          margin-left: 21px;
+        }
+        img {
+          width: 25.3px;
+          height: 31.5px;
+        }
+      }
+    }
+  }
+  &-form {
+    @include flex-column;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin-right: 65px;
+
+    padding: 79px 41px 31px 41px;
+    background: $white;
+    background: #ffffff;
+    border: 0.65371px solid #dddddd;
+    box-sizing: border-box;
+    box-shadow: 0px 8.49823px 12.4205px rgba(0, 0, 0, 0.07);
+    border-radius: 13.0742px;
+    .input-name,
+    .input-email {
+      width: 318.72px;
+      height: 35.84px;
+      left: 41px;
+      top: 79px;
+
+      background: #f5f5f5;
+      border: 1px solid #e8e8e8;
+      box-sizing: border-box;
+      border-radius: 39px;
+      font-size: 9.80565px;
+      line-height: 10px;
+      letter-spacing: 0.065371px;
+
+      font-family: $primaryFontMedium;
+      padding: 12px 0 12px 13px;
+      margin-bottom: 31px;
+    }
+    .input-messege {
+      font-size: 9.80565px;
+      line-height: 10px;
+      letter-spacing: 0.065371px;
+
+      font-family: $primaryFontMedium;
+      padding: 12px 0 12px 13px;
+      width: 318.72px;
+      height: 126.17px;
+      left: 41px;
+      top: 212.68px;
+
+      background: #f5f5f5;
+      border: 0.65371px solid #e8e8e8;
+      margin-bottom: 31px;
+      color: #18171d;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: #18171d;
+    }
+    button {
+      background: $pink;
+      border-radius: 35px;
+      border: none;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+      color: $white;
+
+      width: 94.79px;
+      height: 34.53px;
+      text-align: center;
+    }
+  }
+  .social-network {
+    padding-top: 40px;
+    img {
+      padding-left: 32.3px;
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .contacts-info {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .contacts-info__messeg {
+      padding-bottom: 78px;
+      align-items: center;
+      .contacts-info__messeg__subscribe {
+      }
+      h5 {
+        width: 60%;
+        text-align: left;
+      }
+      img {
+        align-items: flex-start;
+      }
+    }
+  }
+}

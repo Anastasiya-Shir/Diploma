@@ -1,0 +1,25 @@
+.prototipe {
+  padding-top: 100px;
+  padding-bottom: 133px;
+  @include flex-column;
+  align-items: center;
+  h2 {
+    color: $lightBlack;
+    font-family: $primaryFontMedium;
+    font-size: 46px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding-bottom: 27px;
+  }
+  h4 {
+    font-family: $primaryFontRegular;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $darkGrey;
+    padding-bottom: 90px;
+  }
+}

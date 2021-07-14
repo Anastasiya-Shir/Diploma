@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate/issues"
   },
-  "homepage": "https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate#readme"
+  "homepage": "https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
 }

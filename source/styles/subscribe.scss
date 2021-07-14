@@ -1,0 +1,80 @@
+.subscribe {
+  padding-top: 81px;
+  padding-bottom: 121px;
+  @include flex-column;
+  align-items: center;
+  background: $bgColor;
+  h3 {
+    font-family: $primaryFontRegular;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $white;
+    padding-bottom: 7;
+  }
+  h2 {
+    font-family: $primaryFontRegular;
+    font-size: 46px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $white;
+    padding-bottom: 69px;
+  }
+  .light2 {
+    display: none;
+  }
+  p {
+    font-family: $primaryFontRegular;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: 0.2px;
+    color: $white;
+    padding-top: 3px;
+    padding-bottom: 34px;
+  }
+  input {
+    padding: 19px 35px;
+
+    width: 353px;
+    height: 54px;
+    font-family: $primaryFontRegular;
+    background: #f4f4f4;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 39px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    margin-bottom: 12px;
+  }
+  input::placeholder {
+    color: #18171d;
+  }
+  button {
+    padding: 17px 139px;
+    background: $pink;
+    border-radius: 35px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    font-family: $primaryFontMedium;
+    color: $white;
+  }
+}
+
+@media (max-width: 1125px) {
+  .subscribe {
+    .light {
+      display: none;
+    }
+    .light2 {
+      display: block;
+    }
+  }
+}
