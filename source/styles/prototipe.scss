@@ -22,4 +22,10 @@
     color: $darkGrey;
     padding-bottom: 90px;
   }
+  @media (max-width: 1215px) {
+    img {
+      width: 378.95px;
+      height: 211.89px;
+    }
+  }
 }

@@ -22,6 +22,18 @@ body {
   background-image: url(../img/bg1.png);
 
   background-repeat: round;
+  @media (max-width: 1215px) {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    background-repeat: round;
+    background-size: 100% 100%;
+  }
+  @media (max-width: 9900px) {
+    background-repeat: round;
+    background-size: 100% 100%;
+  }
 }
 .container_first {
   width: 90%;

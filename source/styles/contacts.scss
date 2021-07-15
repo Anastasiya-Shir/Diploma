@@ -51,6 +51,9 @@
         h5 {
           width: 60%;
           margin-left: 21px;
+          font-size: 12px;
+          line-height: 18px;
+          font-family: $primaryFontMedium;
         }
         img {
           width: 25.3px;
@@ -137,21 +140,33 @@
 }
 
 @media (max-width: 1125px) {
+  .contacts {
+    h4 {
+      width: 60%;
+    }
+  }
   .contacts-info {
     display: flex;
     flex-direction: column-reverse;
 
     .contacts-info__messeg {
+      @include flex-column;
+      align-items: center !important;
       padding-bottom: 78px;
-      align-items: center;
-      .contacts-info__messeg__subscribe {
-      }
-      h5 {
-        width: 60%;
-        text-align: left;
-      }
-      img {
-        align-items: flex-start;
+
+      &__subscribe {
+        @include flex-row;
+        justify-content: center;
+        h5 {
+          @include flex-column;
+
+          width: 208px;
+          text-align: left;
+        }
+        img {
+          @include flex-column;
+          align-items: center !important;
+        }
       }
     }
   }
