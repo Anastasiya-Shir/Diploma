@@ -1,0 +1,104 @@
+header {
+  input::placeholder {
+    color: #18171d;
+  }
+
+  padding-top: 54px;
+
+  .container_first {
+    @include flex-row;
+    justify-content: space-between;
+    .burger {
+      @include flex-column;
+      align-items: flex-end;
+      display: none;
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 30px;
+        height: 5px;
+        background-color: $white;
+        margin: 2px 0;
+        transition: 0.4s;
+      }
+      .bar2 {
+        width: 25px;
+      }
+      .bar3 {
+        width: 20px;
+      }
+
+      @media (max-width: 1125px) {
+        display: block;
+        @include flex-column;
+        align-items: flex-end;
+      }
+    }
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+      @include flex-row;
+
+      background-color: transparent !important;
+      .btn.btn-outline-success {
+        order: 1;
+        margin-left: 12px;
+        border-radius: 35px;
+        background-color: $white;
+        color: $pink;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        padding: 19px 38px;
+        border-color: transparent;
+        @media (max-width: 1125px) {
+          display: none;
+        }
+      }
+      .form-control.me-2 {
+        background: #efefef;
+        border: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        border-radius: 39px;
+        padding: 19px 0 19px 39px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1px;
+        color: $black !important;
+        margin-left: 10px;
+        width: 273px;
+        height: 54px;
+        @media (max-width: 1125px) {
+          display: none;
+        }
+      }
+      input::placeholder {
+        color: #18171d !important;
+      }
+      a {
+        font-family: $primaryFontRegular;
+
+        font-size: 15px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $white;
+        padding-right: 41px;
+        @media (max-width: 1125px) {
+          display: none;
+        }
+      }
+      li:hover {
+        border-bottom: 2px solid $blue;
+      }
+    }
+  }
+}
+@media (max-width: 1125px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar.navbar-expand-lg.navbar-light.bg-light {
+    display: none;
+  }
+}

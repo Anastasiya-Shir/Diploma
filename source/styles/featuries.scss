@@ -1,0 +1,108 @@
+.featuries {
+  @include flex-column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 251px;
+  h3 {
+    font-family: $primaryFontBold;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: $black;
+  }
+  h2 {
+    font-family: $primaryFontRegular;
+    font-size: 46px;
+    line-height: 57px;
+    color: $black;
+    padding-top: 17px;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: $darkGrey;
+    font-family: $primaryFontBold;
+    text-align: center;
+    padding-top: 27px;
+  }
+
+  &-content {
+    @include flex-row;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    &-section {
+      @include flex-column;
+      justify-content: space-around;
+      align-items: center;
+      p {
+        font-family: $primaryFontMedium;
+        width: 60%;
+        text-align: left;
+        font-size: 18px;
+        line-height: 27px;
+        /* or 150% */
+
+        letter-spacing: 0.2px;
+        color: $darkGrey;
+      }
+    }
+    &-title {
+      @include flex-row;
+      justify-content: space-around;
+      h3 {
+        @include flex-row;
+
+        align-items: center;
+        font-family: $primaryFontMedium;
+        width: 70%;
+        text-align: left;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.1px;
+        color: $black;
+      }
+      img {
+        width: 43px;
+        height: 43.5px;
+        @include flex-row;
+
+        align-items: center;
+      }
+    }
+  }
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 1125px) {
+  .featuries-content {
+    @include flex-column;
+    align-items: center;
+
+    &-section {
+      @include flex-column;
+      align-items: center;
+      padding-bottom: 95px;
+      margin: 0;
+    }
+    &-title {
+      justify-content: center;
+    }
+    h3 {
+      width: 60%;
+      margin: 0;
+    }
+    p {
+      width: 40%;
+      margin: 0;
+    }
+  }
+}

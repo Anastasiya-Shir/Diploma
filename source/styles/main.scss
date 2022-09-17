@@ -1,0 +1,53 @@
+@import "./fonts.scss";
+@import "./constants.scss";
+@import "./mixins.scss";
+@import "./header.scss";
+
+@import "./home-section.scss";
+
+@import "./featuries.scss";
+@import "./prototipe.scss";
+@import "./subscribe.scss";
+@import "./partners.scss";
+@import "./testimonials.scss";
+@import "./pricing.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+
+body {
+  margin: 0;
+}
+.home-block {
+  // background-image: url(..//img/bg2.png);
+  background-image: url(../img/bg1.png);
+
+  background-repeat: round;
+  @media (max-width: 1215px) {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  @media (max-width: 600px) {
+    background-repeat: round;
+    background-size: 100% 100%;
+  }
+  @media (max-width: 9900px) {
+    background-repeat: round;
+    background-size: 100% 100%;
+  }
+}
+.container_first {
+  width: 90%;
+  margin: 0 auto;
+}
+.try_free {
+  font-family: $primaryFontBold;
+  border-radius: 35px;
+  background: $blue;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  color: $white;
+  border: none;
+  padding: 16px 58px;
+  margin-bottom: 113px;
+}

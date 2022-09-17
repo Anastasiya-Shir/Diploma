@@ -1,0 +1,85 @@
+.partners {
+  padding-top: 130px;
+  padding-bottom: 90px;
+  @include flex-column;
+  align-items: center;
+  h2 {
+    font-family: $primaryFontRegular;
+    font-size: 46px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    padding-bottom: 27px;
+    color: #252b42;
+  }
+  h4 {
+    font-family: $primaryFontRegular;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+
+    color: $darkGrey;
+    text-align: center;
+    width: 35%;
+    padding-bottom: 103px;
+  }
+  &-descr {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 90px;
+    @media (max-width: 1125px) {
+      @include flex-column;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    &__card {
+      @include flex-column;
+      align-items: center;
+      width: 33%;
+      align-items: center;
+      @media (max-width: 1125px) {
+      }
+      padding-bottom: 50px;
+
+      img {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 50%;
+        height: 40%;
+      }
+      p {
+        font-family: $primaryFontRegular;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #374754;
+      }
+
+      .descr {
+        font-family: $primaryFontRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        /* or 150% */
+
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        /* second text */
+
+        color: #374754;
+        width: 65%;
+      }
+    }
+  }
+}
+@media (max-width: 1125px) {
+  .container {
+    width: 90%;
+  }
+}

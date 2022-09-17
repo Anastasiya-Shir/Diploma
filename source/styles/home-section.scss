@@ -1,0 +1,154 @@
+.home-section {
+  @include flex-row;
+  justify-content: space-around;
+
+  background-repeat: round;
+  padding-top: 195px;
+  padding-bottom: 195px;
+
+  .home-section__content_iphone {
+    display: none;
+  }
+
+  .screen {
+    position: relative;
+    width: 50%;
+    bottom: -250px;
+    right: 6%;
+    @media (max-width: 1125px) {
+      display: none;
+    }
+  }
+  .bg2 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -40%;
+    @media (max-width: 1125px) {
+      bottom: -60%;
+      z-index: 2;
+    }
+  }
+  .home-sectiom__content {
+    @include flex-column;
+    justify-content: flex-end;
+    @media (max-width: 1125px) {
+      display: none;
+    }
+    button.btn.btn-outline-success {
+      background: #ffffff;
+      border-radius: 35px;
+
+      padding: 16px 58px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 33px;
+
+      text-align: center;
+      letter-spacing: 0.1px;
+      font-family: $primaryFontMedium;
+      color: $blue;
+      border: none;
+      @include flex-column;
+      align-items: flex-start;
+      width: 236px;
+      height: 65px;
+    }
+    h1 {
+      font-family: $primaryFontBold;
+      font-weight: 900;
+      font-size: 55px;
+      line-height: 65px;
+      letter-spacing: 0.2px;
+      color: $white;
+      width: 50%;
+      margin-top: 300px;
+    }
+    p {
+      font-family: $primaryFontMedium;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $white;
+      width: 50%;
+      padding-top: 27px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .home-section {
+    @include flex-column;
+    align-items: center;
+    background-repeat: no-repeat;
+    .home-section__content_iphone {
+      position: relative;
+      @include flex-column;
+      align-items: center;
+      display: inline-block;
+      img {
+        width: 70%;
+      }
+      h1 {
+        font-size: 46px;
+        line-height: 57px;
+        /* or 124% */
+        color: $white;
+        font-family: $primaryFontRegular;
+        text-align: center;
+        letter-spacing: 0.2px;
+        width: 60%;
+        margin: 0;
+      }
+      p {
+        font-family: $primaryFontMedium;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $white;
+        width: 60%;
+        padding-top: 27px;
+        padding-bottom: 70px;
+        text-align: center;
+        margin: 0;
+      }
+      button {
+        background: $blue;
+        border-radius: 35px;
+
+        padding: 16px 58px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+
+        text-align: center;
+        letter-spacing: 0.1px;
+        font-family: $primaryFontMedium;
+        color: $blue;
+        border: none;
+        @include flex-column;
+        align-items: flex-start;
+        width: 236px;
+        height: 65px;
+        color: $white;
+        @include flex-column;
+        align-items: center;
+        position: absolute;
+        bottom: -50%;
+      }
+    }
+    .bg2 {
+      bottom: 5%;
+    }
+    .container-fluid {
+      display: block;
+    }
+  }
+}
